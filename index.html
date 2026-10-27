@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дом.online — новостройки Новосибирска без комиссии, ипотека от 0,5%</title>
+<meta name="description" content="Брокер по новостройкам и ИЖС в Новосибирске: скидки на квартиры до 20%, ипотека от 0,5% на весь срок, покупка без первоначального взноса. Подбор, ипотека и сделка до ключей — бесплатно для покупателя.">
+<meta property="og:title" content="Дом.online — новостройки Новосибирска без комиссии">
+<meta property="og:description" content="Скидки до 20%, ипотека от 0,5%, без первоначального взноса. Сопровождение до ключей бесплатно.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#EDF1F3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230F1E2B'/%3E%3Crect x='8' y='7' width='7' height='7' fill='%23FFC94A'/%3E%3Crect x='17' y='7' width='7' height='7' fill='%23fff'/%3E%3Crect x='8' y='16' width='7' height='9' fill='%23fff'/%3E%3Crect x='17' y='16' width='7' height='9' fill='%23FFC94A'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="logo" href="#top" aria-label="Дом.online — на главную">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="currentColor"/><rect x="8" y="7" width="7" height="7" fill="#FFC94A"/><rect x="17" y="7" width="7" height="7" fill="#fff"/><rect x="8" y="16" width="7" height="9" fill="#fff"/><rect x="17" y="16" width="7" height="9" fill="#FFC94A"/></svg>
+      <span class="logo__text">Дом<span class="logo__dot">.</span>online</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#terms">Условия</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#services">Услуги</a>
+      <a href="#process">Как работаем</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="header__phone" href="tel:+79130096639">+7 913 009-66-39</a>
+    <a class="btn btn--sm header__cta" href="#contact"><span>Подобрать квартиру</span></a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <h1 class="hero__title" id="heroTitle">
+        <span class="line"><span>Новостройки</span></span>
+        <span class="line"><span>без комиссии</span></span>
+      </h1>
+      <p class="hero__lead">Новосибирск и область. Подберём квартиру или дом, одобрим ипотеку и проведём сделку до ключей. Работу оплачивает застройщик, для вас — скидка до&nbsp;20%.</p>
+      <div class="hero__actions">
+        <a class="btn magnetic" href="#calc"><span>Рассчитать ипотеку</span></a>
+        <a class="link" href="https://t.me/nskdom_online" target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+    </div>
+    <figure class="facade" id="facade" aria-label="Фасад дома: каждое горящее окно — новый дом клиента">
+      <svg class="facade__svg" id="facadeSvg" viewBox="0 0 440 560" preserveAspectRatio="xMidYMax meet" role="img" aria-hidden="true"></svg>
+      <figcaption>Каждое горящее окно — чей-то новый дом. Проведите курсором, чтобы зажечь свет.</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <dl class="facts">
+      <div><dt>сделок за плечами</dt><dd><span data-count="2000">2000</span>+</dd></div>
+      <div><dt>года подряд в ТОП-100 брокеров Realt One</dt><dd><span data-count="3">3</span></dd></div>
+      <div><dt>место в рейтинге Trend Agent среди 5000 брокеров Новосибирска</dt><dd><span data-count="2">2</span></dd></div>
+      <div><dt>банка-партнёра для ипотеки</dt><dd><span data-count="24">24</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section class="terms" id="terms">
+  <div class="wrap">
+    <h2 class="h2">Условия, которых нет у других</h2>
+    <div class="terms__row">
+      <div class="term">
+        <p class="term__num">до <span data-count="20">20</span>%</p>
+        <p class="term__text">скидка на квартиру в новостройке при покупке через нас</p>
+      </div>
+      <div class="term">
+        <p class="term__num">от <span data-count="0.5" data-dec="1">0,5</span>%</p>
+        <p class="term__text">ставка по ипотеке на весь срок кредита</p>
+      </div>
+      <div class="term">
+        <p class="term__num"><span data-count="0">0</span> ₽</p>
+        <p class="term__text">первый взнос: покупка в ипотеку без него или только на материнский капитал</p>
+      </div>
+    </div>
+    <p class="terms__note">Подбор, ипотека и сопровождение сделки для покупателя бесплатны. Цена объекта от этого не растёт: нашу работу оплачивает застройщик.</p>
+  </div>
+</section>
+
+<!-- CALC -->
+<section class="calc" id="calc">
+  <div class="wrap calc__grid">
+    <div class="calc__intro">
+      <h2 class="h2">Ваш платёж</h2>
+      <p class="lead">Задайте цену квартиры, взнос и срок. Покажем платёж по программе от 0,5% и рядом — по обычной ставке, чтобы была видна разница.</p>
+    </div>
+    <form class="calc__panel" id="calcForm" onsubmit="return false">
+      <label class="field-range">
+        <span class="field-range__top"><span>Цена квартиры</span><output id="oPrice"></output></span>
+        <input type="range" id="price" min="2500000" max="25000000" step="100000" value="6500000">
+      </label>
+      <label class="field-range">
+        <span class="field-range__top"><span>Первый взнос</span><output id="oDown"></output></span>
+        <input type="range" id="down" min="0" max="50" step="1" value="0">
+      </label>
+      <label class="field-range">
+        <span class="field-range__top"><span>Срок</span><output id="oTerm"></output></span>
+        <input type="range" id="term" min="5" max="30" step="1" value="25">
+      </label>
+      <label class="field-range">
+        <span class="field-range__top"><span>Обычная ставка для сравнения</span><output id="oMkt"></output></span>
+        <input type="range" id="mkt" min="5" max="25" step="0.5" value="18">
+      </label>
+      <div class="calc__result">
+        <div class="res res--main">
+          <p class="res__num" id="rOur">—</p>
+          <p class="res__sub">по программе от 0,5%</p>
+          <p class="res__sub" id="rOver"></p>
+        </div>
+        <div class="res">
+          <p class="res__num res__num--muted" id="rMkt">—</p>
+          <p class="res__sub">по обычной ставке</p>
+          <p class="res__sub" id="rSave"></p>
+        </div>
+      </div>
+      <a class="btn btn--block" href="#contact" id="calcCta"><span>Узнать, какая ставка доступна мне</span></a>
+      <p class="calc__fine">Расчёт ориентировочный: аннуитетный платёж. Итоговая ставка зависит от программы застройщика, банка и вашей ситуации — уточним при подборе.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FEARS -->
+<section class="fears" id="fears">
+  <div class="wrap">
+    <h2 class="h2">Чего вы боитесь</h2>
+    <div class="fears__grid">
+      <div class="fears__tabs" role="tablist" aria-label="Опасения покупателя">
+        <button role="tab" aria-selected="true" aria-controls="fear-0" id="tab-0" class="is-active">Не знаю рынок новостроек</button>
+        <button role="tab" aria-selected="false" aria-controls="fear-1" id="tab-1">Боюсь отказа банка</button>
+        <button role="tab" aria-selected="false" aria-controls="fear-2" id="tab-2">Боюсь купить проблемный объект</button>
+        <button role="tab" aria-selected="false" aria-controls="fear-3" id="tab-3">Нет первоначального взноса</button>
+      </div>
+      <div class="fears__panels">
+        <div role="tabpanel" id="fear-0" aria-labelledby="tab-0" class="fpanel is-active">
+          <p class="fpanel__big">Расскажем плюсы и минусы всех новостроек города.</p>
+          <p>Даём объективную оценку каждого жилого комплекса: застройщик, сроки, инфраструктура, район. Вы выбираете с полной картиной, а не по рекламе. Показываем объекты вживую или онлайн, если вы в другом городе.</p>
+        </div>
+        <div role="tabpanel" id="fear-1" aria-labelledby="tab-1" class="fpanel" hidden>
+          <p class="fpanel__big">Ипотеку одобряем бесплатно — в любом из 24 банков.</p>
+          <p>Подаём заявки в банки-партнёры и добиваемся решения. Работаем с заёмщиками с любой кредитной историей, в том числе без подтверждения дохода. Решение по заявке — от 30 минут.</p>
+        </div>
+        <div role="tabpanel" id="fear-2" aria-labelledby="tab-2" class="fpanel" hidden>
+          <p class="fpanel__big">Только проверенные застройщики.</p>
+          <p>Не работаем с теми, кто срывает сроки строительства, и не предлагаем неликвидные объекты. Квартиру бронируем сразу после выбора, сделку оформляем по ДДУ или ДКП с электронной регистрацией.</p>
+        </div>
+        <div role="tabpanel" id="fear-3" aria-labelledby="tab-3" class="fpanel" hidden>
+          <p class="fpanel__big">Покупка без взноса — возможна.</p>
+          <p>Подберём программу, где первоначальный взнос не нужен, или оформим покупку только на материнский капитал. Заранее посчитаем платёж, чтобы он был комфортным.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCE -->
+<section class="who">
+  <div class="wrap">
+    <h2 class="h2">Для кого мы работаем</h2>
+    <ul class="who__list">
+      <li>
+        <h3>Семья с детьми</h3>
+        <p>Квартира рядом со школой и садом, семейная ипотека, материнский капитал. Находим вариант под район, метро и бюджет.</p>
+      </li>
+      <li>
+        <h3>IT-специалист</h3>
+        <p>Первая квартира в 21–35 лет, часто без накоплений на взнос и с нестандартным подтверждением дохода. Покупка полностью дистанционно.</p>
+      </li>
+      <li>
+        <h3>Инвестор</h3>
+        <p>Квартира на старте продаж по выгодной цене, скидка у застройщика, сделка с ипотекой или без. Сравниваем жилые комплексы по ликвидности.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- CITY -->
+<section class="city" id="city">
+  <div class="wrap">
+    <div class="city__head">
+      <h2 class="h2">Знаем город по районам</h2>
+      <p class="lead">Подбираем жильё по всему Новосибирску и области: показываем район, транспорт, школы и сады, а не только планировки.</p>
+    </div>
+    <div class="city__grid">
+      <figure class="city__fig city__fig--a"><div class="city__img"><img src="img/okt.jpg" width="1920" height="1014" alt="Панорама жилых районов Новосибирска с высоты" loading="lazy"></div><figcaption>Жилые районы Новосибирска</figcaption></figure>
+      <figure class="city__fig city__fig--b"><div class="city__img"><img src="img/stan.jpg" width="1920" height="1440" alt="Жилой дом на улице Станиславского в Новосибирске" loading="lazy"></div><figcaption>Улица Станиславского</figcaption></figure>
+      <figure class="city__fig city__fig--c"><div class="city__img"><img src="img/ob.jpg" width="1741" height="1187" alt="Железнодорожный мост через Обь в Новосибирске" loading="lazy"></div><figcaption>Мост через Обь</figcaption></figure>
+      <figure class="city__fig city__fig--d"><div class="city__img"><img src="img/opera.jpg" width="1920" height="1440" alt="Новосибирский театр оперы и балета" loading="lazy"></div><figcaption>Театр оперы и балета</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <h2 class="h2">Что мы делаем</h2>
+    <ul class="srv-list">
+      <li class="srv">
+        <h3 class="srv__title">Новостройки</h3>
+        <p class="srv__text">Подбор квартиры у проверенных застройщиков Новосибирска, бронь, показы, сопровождение до выдачи ключей. Сделку можно провести дистанционно.</p>
+        <p class="srv__price">Бесплатно для покупателя</p>
+      </li>
+      <li class="srv">
+        <h3 class="srv__title">Дома и ИЖС</h3>
+        <p class="srv__text">Дом, коттедж или барнхаус в коттеджном посёлке или на вашем участке: подбор участка, готовый или индивидуальный проект, гарантия 5 лет.</p>
+        <p class="srv__price">Подбор бесплатно</p>
+      </li>
+      <li class="srv">
+        <h3 class="srv__title">Ипотека</h3>
+        <p class="srv__text">Одобрение в 24 банках-партнёрах, субсидированные ставки, покупка без взноса. Заёмщики с любой кредитной историей и без подтверждения дохода.</p>
+        <p class="srv__price">Одобрение бесплатно</p>
+      </li>
+      <li class="srv">
+        <h3 class="srv__title">Trade-in</h3>
+        <p class="srv__text">Обмен старой квартиры на новое жильё: оцениваем вашу, продаём её и параллельно подбираем новую. Сделка — ДДУ или ДКП.</p>
+        <p class="srv__price">Бесплатно</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <h2 class="h2">От заявки до ключей</h2>
+    <div class="road" id="road">
+      <div class="road__track" aria-hidden="true"><div class="road__fill" id="roadFill"></div></div>
+      <ol class="road__steps">
+        <li><h3>Знакомимся и считаем</h3><p>Узнаём бюджет, состав семьи, сроки и район. Сразу прикидываем платёж по ипотеке.</p></li>
+        <li><h3>Подбираем и показываем</h3><p>Предлагаем лучшие варианты у надёжных застройщиков, организуем экскурсии или онлайн-показ.</p></li>
+        <li><h3>Бронируем квартиру</h3><p>Фиксируем выбранный вариант сразу, пока его не купил кто-то другой.</p></li>
+        <li><h3>Получаем одобрение ипотеки</h3><p>Подаём заявки в банки, согласуем объект и добиваемся одобрения на лучших условиях.</p></li>
+        <li><h3>Сделка и ключи</h3><p>Электронная регистрация, расчёты, акт приёма-передачи. Вы получаете ключи.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about__grid">
+    <div class="about__photo">
+      <img src="img/viktoria.jpg" width="320" height="320" alt="Виктория, основатель агентства Дом.online, на строящемся объекте" loading="lazy">
+    </div>
+    <div class="about__copy">
+      <h2 class="h2">Ваш брокер — Виктория</h2>
+      <p class="lead">Основатель агентства «Дом.online». Официальный партнёр застройщиков и банков, поэтому клиенты получают лучшие условия и особый подход. Не просто подбирает квартиру, а выходит на результат вместе с вами.</p>
+      <ul class="about__list">
+        <li>2000+ сделок — у каждой своя история с хорошим финалом</li>
+        <li>3 года в ТОП-100 лучших брокеров по версии Realt One</li>
+        <li>2 место из 5000 брокеров Новосибирска в рейтинге Trend Agent</li>
+        <li>Помогает и очно, и дистанционно: клиенты приезжали из Читы, Казахстана и других городов</li>
+      </ul>
+      <div class="about__links">
+        <a class="chip" href="https://telegram.me/agent_top_expert" target="_blank" rel="noopener">Telegram-канал</a>
+        <a class="chip" href="https://rutube.ru/channel/42870007/" target="_blank" rel="noopener">Rutube</a>
+        <a class="chip" href="https://vk.com/nskdom.online" target="_blank" rel="noopener">ВКонтакте</a>
+        <a class="chip" href="https://max.ru/id383704274570_biz" target="_blank" rel="noopener">MAX</a>
+        <a class="chip" href="https://instagram.com/vika_brokerstar" target="_blank" rel="noopener">Instagram*</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2 class="h2">Что говорят клиенты</h2>
+    <p class="lead reviews__lead">Оценка 5 в 2ГИС. Отзывы клиентов с сайта агентства — листайте вбок.</p>
+  </div>
+  <div class="rv-track" id="rvTrack" tabindex="0" aria-label="Отзывы клиентов">
+    <figure class="rv">
+      <blockquote>Виктория подобрала идеальный вариант по нашим параметрам — 3-комнатную квартиру в ЖК «Онега», через дорогу — школа, куда поступила моя дочь! Мы не платили комиссию — услуги по покупке квартир в новостройках бесплатны!</blockquote>
+      <figcaption>Алёна Шалайкина</figcaption>
+    </figure>
+    <figure class="rv rv--accent">
+      <blockquote>Обратились 21.06, а 30.06 купили квартиру! Сразу предложила нам квартиру, забронировала её. В итоге интуиция Вики не подвела — именно эту квартиру мы и купили, ещё и по Господдержке.</blockquote>
+      <figcaption>Евгения Галухина</figcaption>
+    </figure>
+    <figure class="rv">
+      <blockquote>С моей кредитной историей отказывали все банки, но мастера своего дела сделали невозможное возможным.</blockquote>
+      <figcaption>Анастасия Сазонова</figcaption>
+    </figure>
+    <figure class="rv">
+      <blockquote>Квартиру мы покупали дистанционно, находясь в городе Чита. Виктория оперативно подобрала объект, который нас устроил на 100%, и сегодня мы заключили сделку в Сбере!</blockquote>
+      <figcaption>Олеся Петунина</figcaption>
+    </figure>
+    <figure class="rv rv--accent">
+      <blockquote>Виктория нашла для меня адекватный вариант ипотеки по субсидированной ставке под 1.99%, а в дальнейшем под 0.49% и без первоначального взноса!</blockquote>
+      <figcaption>Анжелика Костина</figcaption>
+    </figure>
+    <figure class="rv">
+      <blockquote>Сделка проходила в банке ВТБ на Крылова, по времени заняла не более полутора часов, и мы уже получили ключи от приобретенной квартиры!</blockquote>
+      <figcaption>Дарья Волчек</figcaption>
+    </figure>
+    <figure class="rv">
+      <blockquote>Никогда ранее не сталкивалась с агентствами недвижимости. Виктория в любое время дня и ночи готова ответить на все вопросы и развеять все сомнения. Никакой лишней воды — всё по факту, оперативно и быстро.</blockquote>
+      <figcaption>Екатерина Ткаченко</figcaption>
+    </figure>
+    <figure class="rv">
+      <blockquote>Я иногородний и много вопросов решалось по звонку! Юридические аспекты решались быстро.</blockquote>
+      <figcaption>Ринат Камалов</figcaption>
+    </figure>
+  </div>
+  <div class="wrap reviews__foot">
+    <a class="link" href="https://2gis.ru/novosibirsk/firm/70000001066589627/tab/reviews" target="_blank" rel="noopener">Все отзывы в 2ГИС</a>
+    <a class="link" href="https://novosibirsk.flamp.ru/dom_online" target="_blank" rel="noopener">Отзывы на Фламп</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap faq__grid">
+    <h2 class="h2">Частые вопросы</h2>
+    <div class="faq__list">
+      <details class="faq__item"><summary>Почему услуги бесплатны?</summary><p>Нашу работу полностью оплачивают застройщики. Для вас цена квартиры не растёт: вы платите ровно столько, сколько стоит объект, а часто меньше — за счёт скидок.</p></details>
+      <details class="faq__item"><summary>Правда ли, что скидка доходит до 20%?</summary><p>Да, при покупке через нас размер скидки на квартиры в новостройках достигает 20%. Точная цифра зависит от застройщика, жилого комплекса и конкретной квартиры — назовём её при подборе.</p></details>
+      <details class="faq__item"><summary>Можно купить квартиру без первоначального взноса?</summary><p>Можно. Есть программы ипотеки без взноса, а также покупка только на материнский капитал. Подберём вариант под вашу ситуацию.</p></details>
+      <details class="faq__item"><summary>А если банки уже отказывали?</summary><p>Работаем с заёмщиками с любой кредитной историей, в том числе без подтверждения дохода. Заявки подаём в 24 банка-партнёра, подбираем тот, где решение будет положительным.</p></details>
+      <details class="faq__item"><summary>Я живу в другом городе. Можно ли купить дистанционно?</summary><p>Да. Покажем объекты онлайн, подготовим документы и проведём сделку удалённо. Так покупали клиенты из Читы, Казахстана и других регионов.</p></details>
+      <details class="faq__item"><summary>Вы помогаете с частными домами?</summary><p>Да. Подберём участок и проект, построим дом или коттедж в посёлке или на вашем участке. Гарантия на строительство — 5 лет.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap contact__grid">
+    <div class="contact__copy">
+      <h2 class="h2">Расскажите, что ищете</h2>
+      <p class="lead">Оставьте заявку — свяжемся, уточним задачу и предложим варианты. Консультация бесплатная.</p>
+      <ul class="contact__list">
+        <li><span>Телефон</span><a href="tel:+79130096639">+7 913 009-66-39</a></li>
+        <li><span>Telegram</span><a href="https://t.me/nskdom_online" target="_blank" rel="noopener">@nskdom_online</a></li>
+        <li><span>Работаем</span>Новосибирск и Новосибирская область</li>
+      </ul>
+    </div>
+    <form class="form" id="leadForm" novalidate>
+      <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="name" required placeholder="Как к вам обращаться"></label>
+      <label class="field"><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" required placeholder="+7 (___) ___-__-__" inputmode="tel"></label>
+      <label class="field"><span>Что интересует</span>
+        <select name="interest">
+          <option>Квартира в новостройке</option>
+          <option>Дом или коттедж (ИЖС)</option>
+          <option>Ипотека</option>
+          <option>Trade-in (обмен квартиры)</option>
+          <option>Другое</option>
+        </select>
+      </label>
+      <input type="hidden" name="calc" id="calcField" value="">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <label class="check"><input type="checkbox" name="agree" required checked><span>Согласен с <a href="privacy.html" target="_blank">политикой обработки персональных данных</a></span></label>
+      <button class="btn btn--block" type="submit"><span>Отправить заявку</span></button>
+      <p class="form__status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer__brand" aria-hidden="true">Дом.online</p>
+    <div class="footer__row">
+      <p>© <span id="year"></span> Дом.online. Брокер по новостройкам и ИЖС, Новосибирск. Информация на сайте не является публичной офертой.</p>
+      <p><a href="privacy.html">Политика конфиденциальности</a></p>
+    </div>
+    <p class="footer__note">Фото Новосибирска из Wikimedia Commons: «Novosibirsk Ob» — Aladux, CC BY-SA 3.0; «Residential Buildings in Oktyabrsky District» — alder_pm, CC BY 3.0; «Улица Станиславского 7» — К.Артём.1, CC BY-SA 4.0; «Novosibirsk Opera» — Stesso, CC BY-SA 4.0.</p>
+    <p class="footer__note">* Instagram принадлежит компании Meta, признанной экстремистской организацией и запрещённой на территории РФ.</p>
+  </div>
+</footer>
+
+<div class="fab" aria-label="Быстрая связь">
+  <a class="fab__btn" href="https://t.me/nskdom_online" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.5 3.2 2.7 10.4c-1.1.4-1.1 1.1-.2 1.4l4.8 1.5 1.8 5.6c.2.6.4.8.8.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.2-15c.3-1.2-.4-1.8-1.3-1.5ZM8.4 13.1l10.8-6.8c.5-.3.9-.1.6.2l-9 8.1-.3 3.8-2.1-5.3Z"/></svg></a>
+  <a class="fab__btn fab__btn--call" href="tel:+79130096639" aria-label="Позвонить"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1Z"/></svg></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
