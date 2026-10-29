@@ -158,7 +158,7 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/NQS9YG9M5E'
   }
 
   // ===== reveal on scroll (selectors listed explicitly) =====
-  const targets = $$('.h2, .hero + .terms .h2, .lead, .term, .terms__note, .calc__panel, .fears__tabs, .fears__panels, .who__list li, .city__head > *, .city__fig, .srv, .road__steps li, .about__photo, .about__list li, .about__links, .rv, .faq__item, .form, .contact__list li, .facts > div');
+  const targets = $$('.h2, .hero + .terms .h2, .lead, .term, .terms__note, .calc__panel, .fears__tabs, .fears__panels, .who__list li, .srv, .road__steps li, .about__photo, .about__list li, .about__links, .rv, .faq__item, .form, .contact__list li, .facts > div');
   const seen = new Set();
   targets.filter(el => !seen.has(el) && seen.add(el)).forEach(el => {
     const sibs = el.parentElement ? [...el.parentElement.children] : [];
@@ -188,12 +188,6 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/NQS9YG9M5E'
       roadFill.style.transform = `scaleY(${reduce ? 1 : clamp((vh * 0.65 - r.top) / r.height, 0, 1)})`;
       steps.forEach(li => li.classList.toggle('is-passed', reduce || li.getBoundingClientRect().top < vh * 0.65));
     }
-    if (!reduce) $$('.city__img img').forEach(im => {
-      const r = im.parentElement.getBoundingClientRect();
-      if (r.bottom < 0 || r.top > vh) return;
-      const k = clamp((r.top + r.height / 2 - vh / 2) / vh, -1, 1);
-      im.style.transform = `translateY(${k * -28}px) scale(1.14)`;
-    });
     if (photo && !reduce) {
       const r = photo.parentElement.getBoundingClientRect();
       const k = clamp((r.top + r.height / 2 - vh / 2) / vh, -1, 1);
